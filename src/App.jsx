@@ -40,10 +40,10 @@ function App() {
 
   return (
     <div>
-      <div>IsAndroid : {device.isAndroid}</div>
-      <div>IsIOS : {device.isIOS}</div>
-      <div>IsIpad : {device.isIpad}</div>
-      <div>Us Unknown : {isUnknown}</div>
+      <div>IsAndroid : {device.isAndroid ? "true" : "false"}</div>
+      <div>IsIOS : {device.isIOS ? "true" : "false"}</div>
+      <div>IsIpad : {device.isIpad ? "true" : "false"}</div>
+      <div>Is Unknown : {isUnknown ? "true" : "false"}</div>
       <div>{navigator.userAgent}</div>
     </div>
   )
